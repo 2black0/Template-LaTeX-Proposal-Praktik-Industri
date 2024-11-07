@@ -5,8 +5,7 @@ Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Praktik In
 
 ## Catatan Perubahan
 
-- 16 November 2023: Pembuatan template dari Laporan Praktik Industri
-- 07 November 2024: Perbaikan preamble agar lebih rapi dan penambahan tutorial penulisan dokumen dengan LaTeX
+- 07 November 2024: Pembuatan template Proposal Praktik Industri Terbimbing dan Mandiri
 
 ## Penjelasan Isi File
 
@@ -15,14 +14,12 @@ Clone repo ini dengan menggunakan git clone atau unduh dengan klik Download Zip 
         .
         ├──a0-identitas.tex            # file pertama yang harus diedit berisi identitas dari tugas akhir seperti judul, nama mahasiswa, dll
         ├──a1-database.hyphenate.tex   # berisi daftar kata yang perlu dipenggal
-        ├──a2-katapengantar.tex        # kata pengantar, edit sesuai kebutuhan
-        ├──a3-lampiran.tex             # daftar lampiran, edit sesuai dengan kebutuhan
+        ├──a2-lampiran.tex             # daftar lampiran, edit sesuai dengan kebutuhan
         ├──b1-bab1.tex                 # bab 1
         ├──b2-bab2.tex                 # bab 2
         ├──b3-bab3.tex                 # bab 3
-        ├──b4-bab4.tex                 # bab 4
-        ├──laporan-pi.pdf              # file laporan dalam format pdf
-        ├──laporan-pi.tex              # file utama, jangan edit file ini 
+        ├──proposal-pi.pdf             # file laporan dalam format pdf
+        ├──proposal-pi.tex             # file utama, jangan edit file ini 
         ├──README.md                   # file yang sedang anda baca
         ├──pustaka.bib                 # daftar referensi dalam format bib, untuk menggenerate bagian ini gunakan mendeley / zotero
         ├──untouch                     # folder berisi file yang tidak boleh diedit 
