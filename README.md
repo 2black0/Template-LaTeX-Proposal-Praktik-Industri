@@ -6,6 +6,7 @@ Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Praktik In
 ## Catatan Perubahan
 
 - 07 November 2024: Pembuatan template Proposal Praktik Industri Terbimbing dan Mandiri
+- 16 Desember 2024: Perbaikan outline / daftar isi
 
 ## Penjelasan Isi File
 
