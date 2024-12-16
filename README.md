@@ -19,6 +19,7 @@ Clone repo ini dengan menggunakan git clone atau unduh dengan klik Download Zip 
         ├──b1-bab1.tex                 # bab 1
         ├──b2-bab2.tex                 # bab 2
         ├──b3-bab3.tex                 # bab 3
+        ├──b4-bab4.tex                 # Tutorial Penulisan LaTeX, silahkan diexluced dari file utama
         ├──proposal-pi.pdf             # file laporan dalam format pdf
         ├──proposal-pi.tex             # file utama, jangan edit file ini 
         ├──README.md                   # file yang sedang anda baca
