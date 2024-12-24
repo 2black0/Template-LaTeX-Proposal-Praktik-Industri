@@ -90,7 +90,12 @@
 \usepackage{amsmath}
 
 % Pengaturan nomor pada persamaan matematika sesuai bab
+%\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\makeatletter
 \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\renewcommand{\@eqnnum}{\theequation}
+\def\tagform@#1{\maketag@@@{#1}} % This line removes the parentheses
+\makeatother
 
 % Untuk halaman berorientasi landscape
 \usepackage{rotating}
@@ -128,22 +133,66 @@
 \Crefname{figure}{Gambar}{Gambar}
 \crefname{table}{tabel}{tabel}
 \Crefname{table}{Tabel}{Tabel}
+\crefformat{equation}{persamaan~#2#1#3}
 \crefname{equation}{persamaan}{persamaan}
 \Crefname{equation}{Persamaan}{Persamaan}
 \crefname{lstlisting}{kode}{kode}
 \Crefname{lstlisting}{Kode}{Kode}
 
-\AtBeginDocument{\renewcommand{\lstlistingname}{Kode}} 
-\AtBeginDocument{\renewcommand{\thelstlisting}{\thechapter.\arabic{lstlisting}}}
+%\AtBeginDocument{\renewcommand{\lstlistingname}{Kode}} 
+%\AtBeginDocument{\renewcommand{\thelstlisting}{\thechapter.\arabic{lstlisting}}}
+%\AtBeginDocument{\renewcommand{\thelstlisting}{\arabic{chapter}.\arabic{lstlisting}.}}
+\AtBeginDocument{\renewcommand{\lstlistingname}{Kode}}
+\AtBeginDocument{\renewcommand{\thelstlisting}{\arabic{chapter}.\arabic{lstlisting}}}
+
+\captionsetup[lstlisting]{
+  format=plain,
+  labelfont=bf,
+  justification=centering,
+  singlelinecheck=false,
+  labelsep=space
+}
 
 % Paket untuk menampilkan kode program
 \usepackage{listings}
-\lstset{
-    basicstyle=\ttfamily\small,     % Mengatur font menjadi monospasi dan lebih kecil
-    breaklines=true,                   % Membungkus baris panjang
-    frame=single,                        % Menghilangkan bingkai
-    lineskip=0.25pt,                      % Mengatur jarak antar baris
-    columns=fullflexible               % Memperbaiki lebar kolom agar fleksibel
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    columns=fullflexible,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    lineskip=-1pt
 }
+\lstset{style=mystyle}
 
+%paket untuk gambar dengan tikz
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+%untuk if-then
+\usepackage{ifthen}
 %% DILARANG EDIT BAGIAN INI
