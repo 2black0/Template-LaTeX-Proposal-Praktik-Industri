@@ -3,6 +3,11 @@
 %==================================================================
 
 %% DILARANG EDIT BAGIAN INI
+
+% Menghitung lebar teks
+\newlength{\pembimbingwidth}
+\settowidth{\pembimbingwidth}{\pembimbing}
+
 \newpage
 \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
 \begin{center}
@@ -35,7 +40,13 @@
 \begin{minipage}{0.45\textwidth}
     \hfill\\[2em]
     Dosen Pembimbing \tipe,\\[2cm]
-    \resizebox{\textwidth}{!}{\pembimbing}\\
+    %\resizebox{\textwidth}{!}{\pembimbing}\\
+    % Memeriksa lebar teks dan memutuskan apakah akan diresize atau tidak
+    \ifdim\pembimbingwidth>\maxwidth
+    \resizebox{\maxwidth}{!}{\pembimbing} % Resize jika lebar melebihi batas
+    \else
+    \pembimbing % Gunakan font normal jika lebar dalam batas
+    \fi \\
     NIP. \NIPpembimbing
 \end{minipage}%
 
