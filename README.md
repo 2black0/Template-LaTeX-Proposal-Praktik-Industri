@@ -13,8 +13,7 @@ Template ini dirancang agar mahasiswa dapat menyusun laporan dengan format yang 
 ```
 
 .
-├── LICENSE                      # Lisensi proyek (MIT)
-├── README.md                    # Dokumentasi ini
+├── LICENSE                      # Lisensi proyek (MIT)                  
 ├── Project
 │   ├── a0-identitas.tex         # Identitas mahasiswa, dosen pembimbing, judul laporan, dll
 │   ├── a1-database.hyphenate.tex # Pengaturan pemenggalan kata
@@ -43,6 +42,7 @@ Template ini dirancang agar mahasiswa dapat menyusun laporan dengan format yang 
 │       ├── xx-pengesahan.tex
 │       ├── xx-preambles.tex
 │       └── xx-sampul.tex
+└── README.md                   # Dokumentasi ini
 
 ```
 
