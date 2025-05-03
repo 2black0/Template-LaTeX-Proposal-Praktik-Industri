@@ -1,90 +1,142 @@
+# 📘 Template LaTeX Proposal Praktik Industri
 
-# Template LaTeX Laporan Praktik Industri Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY
+**Program Sarjana Terapan Teknik Elektronika — Fakultas Vokasi UNY**
 
-Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Praktik Industri Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY. Semua Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY wajib menggunakan template LaTeX ini karena dengan menggunakan template ini penulisan laporan akan menjadi lebih cepat dengan format yang seragam sehingga mahasiswa dapat fokus pada konten dan tidak terkendala dengan format laporan yang kadang kala menjadi kendala tersendiri. Selain itu penyimpanan file laporan menjadi lebih mudah karena dapat di simpan di Github sehingga mudah untuk diakses.
+Repositori ini menyediakan **template LaTeX** resmi untuk penulisan **Laporan Praktik Industri** mahasiswa Program Sarjana Terapan Teknik Elektronika, Fakultas Vokasi, Universitas Negeri Yogyakarta (UNY).
 
-## Penjelasan Isi File
+Template ini dirancang agar mahasiswa dapat menyusun laporan dengan format yang **terstandar**, **profesional**, dan mudah disesuaikan. Dengan menggunakan LaTeX, mahasiswa dapat fokus pada konten teknis tanpa direpotkan oleh masalah tata letak dan format dokumen.
 
-Clone repo ini dengan menggunakan git clone atau unduh dengan klik Download Zip yang ada di pojok kanan atas dari repo ini. Terdapat beberapa file dalam repo ini, dan berikut adalah penjelasan dari masing-masing file:
+---
 
-        .
-        ├──a0-identitas.tex            # file pertama yang harus diedit berisi identitas dari tugas akhir seperti judul, nama mahasiswa, dll
-        ├──a1-database.hyphenate.tex   # berisi daftar kata yang perlu dipenggal
-        ├──a2-lampiran.tex             # daftar lampiran, edit sesuai dengan kebutuhan
-        ├──b1-bab1.tex                 # bab 1
-        ├──b2-bab2.tex                 # bab 2
-        ├──b3-bab3.tex                 # bab 3
-        ├──b4-bab4.tex                 # Tutorial Penulisan LaTeX, silahkan diexclude dari file utama
-        ├──proposal-pi.pdf             # file laporan dalam format pdf
-        ├──proposal-pi.tex             # file utama, jangan edit file ini 
-        ├──README.md                   # file yang sedang anda baca
-        ├──pustaka.bib                 # daftar referensi dalam format bib, untuk menggenerate bagian ini gunakan mendeley / zotero
-        ├──untouch                     # folder berisi file yang tidak boleh diedit 
-                xx-daftar.tex               
-                xx-daftarpustaka.tex        
-                xx-pengesahan.tex                
-                xx-preambles.tex            
-                xx-sampul.tex               
-        ├──gambar                      # folder berisi gambar, copy gambar yang dimasukkan pada laporan kesini dalam format jpg/png
-               gambar-kucing.jpg
-               logo-uny.png
-               screenshot-miktex.png
-               screenshot-texstudio.png
-        ├──kode                         # folder berisi kode program, simpan dengan format sesuai dengan bahasa pemrograman yang digunakan
-               code_sample.cpp
-               code_sample.ino
-               code_sample.java
-               code_sample.py
+## 📂 Struktur Folder
 
-file yang diawali dengan nama xx- terlarang untuk diedit selain itu silahkan edit sesuai dengan kebutuhan.
+```
 
-## Video Tutorial
-1. Tutorial LaTeX 1 - Penggunaan Template untuk Penulisan Laporan Tugas Akhir D4 Teknik Elektronika UNY
-[![Tutorial LaTeX 1 - Penggunaan Template untuk Penulisan Laporan Tugas Akhir D4 Teknik Elektronika UNY](https://i.ytimg.com/vi/lnPTVrOGB90/hqdefault.jpg)](https://www.youtube.com/watch?v=lnPTVrOGB90)
+.
+├── LICENSE                      # Lisensi proyek (MIT)
+├── README.md                    # Dokumentasi ini
+├── Project
+│   ├── a0-identitas.tex         # Identitas mahasiswa, dosen pembimbing, judul laporan, dll
+│   ├── a1-database.hyphenate.tex # Pengaturan pemenggalan kata
+│   ├── a2-lampiran.tex          # Daftar lampiran (dapat disesuaikan)
+│   ├── b1-bab1.tex              # BAB 1 laporan
+│   ├── b2-bab2.tex              # BAB 2 laporan
+│   ├── b3-bab3.tex              # BAB 3 laporan
+│   ├── b4-bab4.tex              # Tutorial LaTeX (jangan disertakan dalam laporan akhir)
+│   ├── gambar/                  # Folder gambar yang digunakan dalam laporan
+│   │   ├── gambar-kucing.jpg
+│   │   ├── logo-uny.png
+│   │   ├── screenshot-miktex.png
+│   │   ├── screenshot-texstudio-macos.png
+│   │   └── screenshot-texstudio-windows.png
+│   ├── kode/                    # Folder kode program (C++, Python, Arduino, Java, dll)
+│   │   ├── code_sample.cpp
+│   │   ├── code_sample.ino
+│   │   ├── code_sample.java
+│   │   └── code_sample.py
+│   ├── proposal-pi.tex          # File utama (jangan diubah langsung)
+│   ├── proposal-pi.pdf          # Contoh hasil kompilasi
+│   ├── pustaka.bib              # Daftar referensi dalam format BibTeX
+│   └── untouch/                 # Komponen LaTeX penting (jangan diubah)
+│       ├── xx-daftar.tex
+│       ├── xx-daftarpustaka.tex
+│       ├── xx-pengesahan.tex
+│       ├── xx-preambles.tex
+│       └── xx-sampul.tex
 
-1. Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX
-[![Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX](https://i.ytimg.com/vi/4Qk_2pknhsM/hqdefault.jpg)](https://www.youtube.com/watch?v=4Qk_2pknhsM)
+```
 
-1. Tutorial Latex 3 - Penambahan Gambar dan Tabel
-[![Tutorial Latex 3 - Penambahan Gambar dan Tabel](https://i.ytimg.com/vi/oxY1mbZgv94/hqdefault.jpg)](https://www.youtube.com/watch?v=oxY1mbZgv94)
+---
 
-1. Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi
-[![Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi](https://i.ytimg.com/vi/goq-IS4WJW4/hqdefault.jpg)](https://www.youtube.com/watch?v=goq-IS4WJW4)
+## 🛠️ Persiapan & Instalasi
 
-1. Tutorial LaTeX 5 - Penulisan Kode Program pada LaTeX
-[![Tutorial LaTeX 5 - Penulisan Kode Program pada LaTeX](https://i.ytimg.com/vi/JeSJ0mYfxA0/hqdefault.jpg)](https://www.youtube.com/watch?v=JeSJ0mYfxA0)
+### 1. Instalasi MikTeX dan TeXstudio
 
-6. Workshop Lengkap Penulisan Proposal dan Laporan dengan LaTeX
-[![Workshop Lengkap Penulisan Proposal dan Laporan dengan LaTeX](https://i.ytimg.com/vi/anMLRydjDOE/hqdefault.jpg)](https://www.youtube.com/watch?v=anMLRydjDOE)
+* **MikTeX**: [https://miktex.org/download](https://miktex.org/download)
 
+  > *Wajib pilih opsi* **for all users** dan **Always** pada on-the-fly installation (khusus Windows).
+* **TeXstudio**: [https://www.texstudio.org](https://www.texstudio.org)
 
-## Petunjuk Penggunaan
-1. Unduh dan Install MikTeX (https://miktex.org/download) sebagai distribusi dari LaTeX (pilih sesuai sistem operasi yang digunakan), catatan bagi pengguna Windows **Wajib Memilih for All User** saat proses instalasi serta pilih opsi _Always_ pada Installed on-the-fly
-2. Unduh dan Install TeXstudio (https://www.texstudio.org/) sebagai editor untuk Sistem Operasi Windows, MacOS atau Linux
-3. Sebelum unduh repo ini pastikan telah mengupdate semua paket yang ada pada MikTex Console kemudian unduh Repo ini dan extract, kemudian Open _laporan.tex_ pada TexStudio
-4. Pada sisi kiri terdapat daftar file yang berada dalam folder kemudian edit file sesuai dengan kebutuhan
-5. Terdapat beberapa contoh dalam _laporan.tex_ yang dapat dibaca pada _laporan.pdf_ seperti memasukkan gambar, membuat tabel, menuliskan persamaan, menuliskan sumber kode, dan membuat referensi dan sitasi
-6. Pastikan komputer sudah terhubung dengan internet karena diperlukan beberapa paket yang diunduh secara otomatis, kemudian setelah semua selesai bisa klik tombol **build & view** maka dokumen LaTeX akan digenerate dan outputnya adalah _laporan.pdf_ yang berada di sisi kanan
+### 2. Update MikTeX Packages
 
-## Langkah Pengerjaan
-1. Edit file `a0-identitas.tex` dengan mengisi judul, nama mahasiswa, nim, dosen pembimbing, dan lain-lain sesuai kebutuhan
-2. Edit file `b1-bab1.tex` sampai `b3-bab3.tex` dengan mengisi konten laporan sesuai dengan bab yang diinginkan. Jangan lupa hapus atau exclude file `b4-bab4.tex` pada `proposal-pi.tex`
-3. Edit file `pustaka.bib` dengan mengisi daftar pustaka
-4. Edit file `a2-lampiran.tex` dengan mengisi daftar lampiran
+Buka **MikTeX Console**, lalu klik **Update All** agar semua paket LaTeX tersedia.
 
-## Pembuatan isi file bib (bibliography)
-Pembuatan isi file bib (bibliography) dapat dilakukan dengan software Mendeley (https://www.mendeley.com/search/) atau Zotero (https://www.zotero.org/). Selain itu sangat direkomendasikan menggunakan JabRef (https://www.jabref.org/).
+### 3. Unduh Template
 
-## Screenshot
-![TexStudio on MacOS](gambar/screenshot-texstudio-macos.png "TexStudio on MacOS")
+* Pilih salah satu:
 
-![TexStudio on Windows](gambar/screenshot-texstudio-windows.png "TexStudio on Windows")
+  * Klik tombol **Code > Download ZIP**
+  * Gunakan Git:
 
-## Lisensi
-Template ini dilisensikan di bawah MIT License.
+    ```bash
+    git clone https://github.com/2black0/Template-LaTeX-Proposal-Praktik-Industri.git
+    ```
 
-## Kontribusi
-Kontribusi sangat diterima. Silakan buat pull request atau buka issue untuk perbaikan atau penambahan fitur.
+---
 
-## Kontak
-Unutuk pertanyaan lebih lanjut, silahkan hubungi [@2black0](https://www.github.com/2black0) atau email ardyseto@uny.ac.id
+## ✍️ Cara Menggunakan Template
+
+1. **Buka `proposal-pi.tex`** di TeXstudio (jangan ubah file ini).
+2. **Edit bagian-bagian berikut:**
+
+   * `a0-identitas.tex` → Isi nama, NIM, judul, pembimbing, dsb.
+   * `b1-bab1.tex` s.d. `b3-bab3.tex` → Tulis isi laporan sesuai struktur bab.
+   * `a2-lampiran.tex` → Tambahkan lampiran (jika ada).
+   * `pustaka.bib` → Tambahkan referensi menggunakan Mendeley/Zotero/JabRef.
+3. **Kompilasi** dengan klik tombol **Build & View** (`F5` atau ikon panah hijau).
+4. **Output laporan** tersedia dalam `proposal-pi.pdf`.
+
+---
+
+## 📺 Video Tutorial
+
+| Materi                                 | Link                                       |
+| -------------------------------------- | ------------------------------------------ |
+| Tutorial 1 - Dasar Penggunaan Template | [🎥 YouTube](https://youtu.be/lnPTVrOGB90) |
+| Tutorial 2 - Penulisan Isi             | [🎥 YouTube](https://youtu.be/4Qk_2pknhsM) |
+| Tutorial 3 - Gambar dan Tabel          | [🎥 YouTube](https://youtu.be/oxY1mbZgv94) |
+| Tutorial 4 - Referensi & Sitasi        | [🎥 YouTube](https://youtu.be/goq-IS4WJW4) |
+| Tutorial 5 - Penulisan Kode Program    | [🎥 YouTube](https://youtu.be/JeSJ0mYfxA0) |
+| Workshop Lengkap                       | [🎥 YouTube](https://youtu.be/anMLRydjDOE) |
+
+---
+
+## 📚 Pengelolaan Referensi BibTeX
+
+Disarankan menggunakan salah satu tools berikut untuk mengelola file `pustaka.bib`:
+
+* [Mendeley](https://www.mendeley.com/)
+* [Zotero](https://www.zotero.org/)
+* [JabRef](https://www.jabref.org/)
+
+---
+
+## 🖼️ Cuplikan Tampilan
+
+| TeXstudio - macOS                                     | TeXstudio - Windows                                     |
+| ----------------------------------------------------- | ------------------------------------------------------- |
+| ![Mac](Project/gambar/screenshot-texstudio-macos.png) | ![Win](Project/gambar/screenshot-texstudio-windows.png) |
+
+---
+
+## 📄 Lisensi
+
+Template ini dilisensikan dengan [MIT License](LICENSE).
+
+---
+
+## 🤝 Kontribusi
+
+Kami sangat terbuka untuk perbaikan dan pengembangan template ini.
+Silakan buat **pull request** atau ajukan **issue** untuk menyampaikan saran atau laporan bug.
+
+---
+
+## 📬 Kontak
+
+Untuk informasi lebih lanjut hubungi:
+**Ardy Seto Priambodo**
+✉️ [ardyseto@uny.ac.id](mailto:ardyseto@uny.ac.id)
+👤 GitHub: [@2black0](https://github.com/2black0)
+
+---
