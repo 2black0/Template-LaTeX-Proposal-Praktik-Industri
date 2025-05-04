@@ -2,7 +2,7 @@
 
 **Program Sarjana Terapan Teknik Elektronika — Fakultas Vokasi UNY**
 
-Repositori ini menyediakan **template LaTeX** resmi untuk penulisan **Laporan Praktik Industri** mahasiswa Program Sarjana Terapan Teknik Elektronika, Fakultas Vokasi, Universitas Negeri Yogyakarta (UNY).
+Repositori ini menyediakan **template LaTeX** resmi untuk penulisan **Proposal Praktik Industri** mahasiswa Program Sarjana Terapan Teknik Elektronika, Fakultas Vokasi, Universitas Negeri Yogyakarta (UNY).
 
 Template ini dirancang agar mahasiswa dapat menyusun laporan dengan format yang **terstandar**, **profesional**, dan mudah disesuaikan. Dengan menggunakan LaTeX, mahasiswa dapat fokus pada konten teknis tanpa direpotkan oleh masalah tata letak dan format dokumen.
 
