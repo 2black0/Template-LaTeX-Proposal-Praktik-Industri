@@ -4,10 +4,6 @@
 
 %% DILARANG EDIT BAGIAN INI
 
-% Menghitung lebar teks
-\newlength{\pembimbingwidth}
-\settowidth{\pembimbingwidth}{\pembimbing}
-
 \newpage
 \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
 \begin{center}
@@ -19,35 +15,34 @@
 
 \begin{center}
     \begin{doublespace}
-        \textbf{\large \MakeUppercase {\perusahaan}}
+        \textbf{\large \MakeUppercase {\judulid}}
     \end{doublespace}
 \end{center}
 
 \begin{center}
-    Mahasiswa yang Mengajukan \\
-    \tipe,\\[2cm]
-    \penulis\\
-    NIM. \nim
+    Disusun oleh:\\
+    \textbf{\penulis}\\
+    \textbf{NIM \nim}\\[1.5cm]
+
+    Proposal ini disusun guna memenuhi salah satu persyaratan menempuh mata kuliah {\tipe} pada Program Studi {\prodi} {\fakultas} {\universitas} dan telah disahkan pada tanggal \tglpengesahan\\[0.75cm]
+\end{center}
+
+\begin{center}
+    Menyetujui/Mengesahkan:\\[2cm]
 \end{center}
 
 \begin{minipage}{0.47\textwidth}
-    \hfill\\[2em]
-    Koordinator UKKI {\prodi} FV UNY,\\[2cm]
-    \resizebox{\textwidth}{!}{\koordinatorUKKI}\\
+    \centering
+    Koordinator UKKI {\prodi} FV UNY,\\[3cm]
+    \koordinatorUKKI\\
     NIP. \NIPkoordinatorUKKI
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\textwidth}
-    \hfill\\[2em]
-    Dosen Pembimbing \tipe,\\[2cm]
-    %\resizebox{\textwidth}{!}{\pembimbing}\\
-    % Memeriksa lebar teks dan memutuskan apakah akan diresize atau tidak
-    \ifdim\pembimbingwidth>\maxwidth
-    \resizebox{\maxwidth}{!}{\pembimbing} % Resize jika lebar melebihi batas
-    \else
-    \pembimbing % Gunakan font normal jika lebar dalam batas
-    \fi \\
+    \centering
+    Dosen Pembimbing {\tipe},\\[3cm]
+    \pembimbing\\
     NIP. \NIPpembimbing
-\end{minipage}%
+\end{minipage}
 
 %% DILARANG EDIT BAGIAN INI
